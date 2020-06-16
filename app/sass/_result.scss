@@ -1,0 +1,44 @@
+$grey: #c0c0c0;
+$black: #000000;
+$white: #ffff;
+
+article.search-result {
+    padding: 20px;
+    border-bottom: 1px solid $grey;
+    display: flex;
+    flex-direction: row;
+    font-family: Arial, Helvetica, sans-serif;
+
+    .item-image {
+        width: 30%;
+        padding-left: 10px;
+        margin: 0 auto;
+    }
+
+    .description {
+        padding-left: 20px;
+        width: 50%;
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        .price {
+            font-weight: bold;
+        }
+
+        .tags {
+            display: flex;
+            flex-direction: row;
+            margin: 10px 0 60px;
+
+            .tag {
+                background-color: $black;
+                color: $white;
+                margin: 0 10px 0 0;
+                width: 90px;
+                text-align: center;
+            }
+        }
+    }
+}
