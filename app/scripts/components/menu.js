@@ -113,7 +113,7 @@ class Menu extends React.Component {
                         <i className="material-icons close">close</i>
                     </a>
                 </div>
-                <div className={(this.state.data.length ? "show " : "hide") + "search-result"}>
+                <div className={(this.state.data && this.state.data.length ? "show " : "hide") + "search-result"}>
                     {this.state.data.map(function (res) {
                         return <Result key={res._id} data={res} />;
                     })}
